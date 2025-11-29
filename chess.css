@@ -9,7 +9,7 @@
     width: 80px;
     height: 80px;
     background-color: #999;
-      font-size:50px;
+    font-size:50px;
     text-align:center;
     display: table-cell;
     vertical-align:middle;
@@ -21,12 +21,34 @@
     height: 80px;
     background-color: #fff;
     font-size:50px;
-    text-align:center;
+    text-align:center;  
     display: table-cell;
     vertical-align:middle;
     cursor: pointer;
 }
 
 .highlight {
-    background-color: #ffff00 !important;
+    background-color: #4d4a4a !important;
+}
+
+/* NEW: message UI and wrapper */
+.game-wrapper {
+    display: inline-block;
+    position: relative;
+    margin: 20px;
+}
+
+#game-message {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(34,34,34,0.95);
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 8px;
+    display: none;
+    z-index: 20;
+    font-weight: 600;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
 }
